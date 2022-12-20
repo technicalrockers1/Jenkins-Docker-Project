@@ -6,7 +6,6 @@ RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|
 RUN yum -y install java
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
-RUN yum update
 RUN unzip photogenic.zip
 RUN yum install unzip
 RUN cp -rvf photogenic/* .
