@@ -1,7 +1,7 @@
 FROM  centos:latest
 MAINTAINER nadeemshah@gmail.com
-RUN yum install -y httpd \zip\unzip
-RUN yum -y install java
+RUN apt-get install -y httpd \zip\unzip
+RUN apt-get install java -y
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN yum install unzip
