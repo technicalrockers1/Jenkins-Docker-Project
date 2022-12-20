@@ -1,6 +1,6 @@
 FROM  centos:latest
 MAINTAINER nadeemshah@gmail.com
-RUN apt install -y httpd \
+RUN yum install -y httpd \
  zip\
  unzip
 RUN cd /etc/yum.repos.d/
