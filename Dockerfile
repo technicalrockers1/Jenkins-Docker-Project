@@ -1,6 +1,6 @@
 FROM  centos:latest
 MAINTAINER nadeemshah@gmail.com
-RUN apt-get install httpd -y\
+RUN yum install httpd -y\
  zip\
  unzip
 RUN apt-get install java -y
